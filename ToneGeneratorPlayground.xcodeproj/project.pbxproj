@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96B3EBBD25561C7C006A4140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBBC25561C7C006A4140 /* AppDelegate.swift */; };
+		96B3EBBF25561C7C006A4140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBBE25561C7C006A4140 /* SceneDelegate.swift */; };
+		96B3EBC125561C7C006A4140 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBC025561C7C006A4140 /* ContentView.swift */; };
+		96B3EBC325561C7F006A4140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B3EBC225561C7F006A4140 /* Assets.xcassets */; };
+		96B3EBC625561C7F006A4140 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B3EBC525561C7F006A4140 /* Preview Assets.xcassets */; };
+		96B3EBC925561C7F006A4140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B3EBC725561C7F006A4140 /* LaunchScreen.storyboard */; };
+		96B3EBD425561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBD325561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift */; };
+		96B3EBDF25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBDE25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96B3EBD025561C7F006A4140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B3EBB125561C7C006A4140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96B3EBB825561C7C006A4140;
+			remoteInfo = ToneGeneratorPlayground;
+		};
+		96B3EBDB25561C7F006A4140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96B3EBB125561C7C006A4140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96B3EBB825561C7C006A4140;
+			remoteInfo = ToneGeneratorPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96B3EBB925561C7C006A4140 /* ToneGeneratorPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToneGeneratorPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B3EBBC25561C7C006A4140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96B3EBBE25561C7C006A4140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		96B3EBC025561C7C006A4140 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96B3EBC225561C7F006A4140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96B3EBC525561C7F006A4140 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96B3EBC825561C7F006A4140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96B3EBCA25561C7F006A4140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B3EBCF25561C7F006A4140 /* ToneGeneratorPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneGeneratorPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B3EBD325561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneGeneratorPlaygroundTests.swift; sourceTree = "<group>"; };
+		96B3EBD525561C7F006A4140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B3EBDA25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneGeneratorPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B3EBDE25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneGeneratorPlaygroundUITests.swift; sourceTree = "<group>"; };
+		96B3EBE025561C7F006A4140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96B3EBB625561C7C006A4140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBCC25561C7F006A4140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBD725561C7F006A4140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96B3EBB025561C7C006A4140 = {
+			isa = PBXGroup;
+			children = (
+				96B3EBBB25561C7C006A4140 /* ToneGeneratorPlayground */,
+				96B3EBD225561C7F006A4140 /* ToneGeneratorPlaygroundTests */,
+				96B3EBDD25561C7F006A4140 /* ToneGeneratorPlaygroundUITests */,
+				96B3EBBA25561C7C006A4140 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96B3EBBA25561C7C006A4140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B3EBB925561C7C006A4140 /* ToneGeneratorPlayground.app */,
+				96B3EBCF25561C7F006A4140 /* ToneGeneratorPlaygroundTests.xctest */,
+				96B3EBDA25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96B3EBBB25561C7C006A4140 /* ToneGeneratorPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				96B3EBBC25561C7C006A4140 /* AppDelegate.swift */,
+				96B3EBBE25561C7C006A4140 /* SceneDelegate.swift */,
+				96B3EBC025561C7C006A4140 /* ContentView.swift */,
+				96B3EBC225561C7F006A4140 /* Assets.xcassets */,
+				96B3EBC725561C7F006A4140 /* LaunchScreen.storyboard */,
+				96B3EBCA25561C7F006A4140 /* Info.plist */,
+				96B3EBC425561C7F006A4140 /* Preview Content */,
+			);
+			path = ToneGeneratorPlayground;
+			sourceTree = "<group>";
+		};
+		96B3EBC425561C7F006A4140 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96B3EBC525561C7F006A4140 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96B3EBD225561C7F006A4140 /* ToneGeneratorPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				96B3EBD325561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift */,
+				96B3EBD525561C7F006A4140 /* Info.plist */,
+			);
+			path = ToneGeneratorPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		96B3EBDD25561C7F006A4140 /* ToneGeneratorPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96B3EBDE25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift */,
+				96B3EBE025561C7F006A4140 /* Info.plist */,
+			);
+			path = ToneGeneratorPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96B3EBB825561C7C006A4140 /* ToneGeneratorPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B3EBE325561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlayground" */;
+			buildPhases = (
+				96B3EBB525561C7C006A4140 /* Sources */,
+				96B3EBB625561C7C006A4140 /* Frameworks */,
+				96B3EBB725561C7C006A4140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToneGeneratorPlayground;
+			productName = ToneGeneratorPlayground;
+			productReference = 96B3EBB925561C7C006A4140 /* ToneGeneratorPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96B3EBCE25561C7F006A4140 /* ToneGeneratorPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B3EBE625561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlaygroundTests" */;
+			buildPhases = (
+				96B3EBCB25561C7F006A4140 /* Sources */,
+				96B3EBCC25561C7F006A4140 /* Frameworks */,
+				96B3EBCD25561C7F006A4140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96B3EBD125561C7F006A4140 /* PBXTargetDependency */,
+			);
+			name = ToneGeneratorPlaygroundTests;
+			productName = ToneGeneratorPlaygroundTests;
+			productReference = 96B3EBCF25561C7F006A4140 /* ToneGeneratorPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96B3EBD925561C7F006A4140 /* ToneGeneratorPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B3EBE925561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlaygroundUITests" */;
+			buildPhases = (
+				96B3EBD625561C7F006A4140 /* Sources */,
+				96B3EBD725561C7F006A4140 /* Frameworks */,
+				96B3EBD825561C7F006A4140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96B3EBDC25561C7F006A4140 /* PBXTargetDependency */,
+			);
+			name = ToneGeneratorPlaygroundUITests;
+			productName = ToneGeneratorPlaygroundUITests;
+			productReference = 96B3EBDA25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96B3EBB125561C7C006A4140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					96B3EBB825561C7C006A4140 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					96B3EBCE25561C7F006A4140 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 96B3EBB825561C7C006A4140;
+					};
+					96B3EBD925561C7F006A4140 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 96B3EBB825561C7C006A4140;
+					};
+				};
+			};
+			buildConfigurationList = 96B3EBB425561C7C006A4140 /* Build configuration list for PBXProject "ToneGeneratorPlayground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96B3EBB025561C7C006A4140;
+			productRefGroup = 96B3EBBA25561C7C006A4140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96B3EBB825561C7C006A4140 /* ToneGeneratorPlayground */,
+				96B3EBCE25561C7F006A4140 /* ToneGeneratorPlaygroundTests */,
+				96B3EBD925561C7F006A4140 /* ToneGeneratorPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96B3EBB725561C7C006A4140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3EBC925561C7F006A4140 /* LaunchScreen.storyboard in Resources */,
+				96B3EBC625561C7F006A4140 /* Preview Assets.xcassets in Resources */,
+				96B3EBC325561C7F006A4140 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBCD25561C7F006A4140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBD825561C7F006A4140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96B3EBB525561C7C006A4140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3EBBD25561C7C006A4140 /* AppDelegate.swift in Sources */,
+				96B3EBBF25561C7C006A4140 /* SceneDelegate.swift in Sources */,
+				96B3EBC125561C7C006A4140 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBCB25561C7F006A4140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3EBD425561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B3EBD625561C7F006A4140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3EBDF25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96B3EBD125561C7F006A4140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96B3EBB825561C7C006A4140 /* ToneGeneratorPlayground */;
+			targetProxy = 96B3EBD025561C7F006A4140 /* PBXContainerItemProxy */;
+		};
+		96B3EBDC25561C7F006A4140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96B3EBB825561C7C006A4140 /* ToneGeneratorPlayground */;
+			targetProxy = 96B3EBDB25561C7F006A4140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96B3EBC725561C7F006A4140 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96B3EBC825561C7F006A4140 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96B3EBE125561C7F006A4140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96B3EBE225561C7F006A4140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96B3EBE425561C7F006A4140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ToneGeneratorPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ToneGeneratorPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96B3EBE525561C7F006A4140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ToneGeneratorPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ToneGeneratorPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96B3EBE725561C7F006A4140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				INFOPLIST_FILE = ToneGeneratorPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneGeneratorPlayground.app/ToneGeneratorPlayground";
+			};
+			name = Debug;
+		};
+		96B3EBE825561C7F006A4140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				INFOPLIST_FILE = ToneGeneratorPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneGeneratorPlayground.app/ToneGeneratorPlayground";
+			};
+			name = Release;
+		};
+		96B3EBEA25561C7F006A4140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				INFOPLIST_FILE = ToneGeneratorPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToneGeneratorPlayground;
+			};
+			name = Debug;
+		};
+		96B3EBEB25561C7F006A4140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28A7JVTRXB;
+				INFOPLIST_FILE = ToneGeneratorPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphorophonics.ToneGeneratorPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToneGeneratorPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96B3EBB425561C7C006A4140 /* Build configuration list for PBXProject "ToneGeneratorPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3EBE125561C7F006A4140 /* Debug */,
+				96B3EBE225561C7F006A4140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B3EBE325561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3EBE425561C7F006A4140 /* Debug */,
+				96B3EBE525561C7F006A4140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B3EBE625561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3EBE725561C7F006A4140 /* Debug */,
+				96B3EBE825561C7F006A4140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B3EBE925561C7F006A4140 /* Build configuration list for PBXNativeTarget "ToneGeneratorPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3EBEA25561C7F006A4140 /* Debug */,
+				96B3EBEB25561C7F006A4140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96B3EBB125561C7C006A4140 /* Project object */;
+}
