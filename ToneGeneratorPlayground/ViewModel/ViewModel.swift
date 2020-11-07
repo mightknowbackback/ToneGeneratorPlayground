@@ -9,14 +9,8 @@ import Foundation
 import SwiftUI
 
 class ViewModel : ObservableObject {
-    @Published var audioModel = AudioModel()
-    
-    var frequencyBinding : Binding<Double> {
-        Binding(
-            get: {Double(self.audioModel.frequency)},
-            set: {d in
-                self.audioModel.frequency = Float(d)
-            }
-        )
+    var frequencyLabelString : String {
+        return String(format: "Frequency:\n%.1f", self.audioModel.synth.frequency)
     }
+    @Published var audioModel = AudioModel()
 }

@@ -15,12 +15,10 @@
 		96B3EBC925561C7F006A4140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B3EBC725561C7F006A4140 /* LaunchScreen.storyboard */; };
 		96B3EBD425561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBD325561C7F006A4140 /* ToneGeneratorPlaygroundTests.swift */; };
 		96B3EBDF25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBDE25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift */; };
-		96B3EBF425561CBC006A4140 /* TestOscillator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBF125561CBC006A4140 /* TestOscillator.swift */; };
-		96B3EBF525561CBC006A4140 /* TestSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBF225561CBC006A4140 /* TestSynthesizer.swift */; };
-		96B3EBFA25561D8D006A4140 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBF925561D8D006A4140 /* AudioModel.swift */; };
 		96B3EC0425561E29006A4140 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC0325561E29006A4140 /* TestView.swift */; };
 		96B3EC0C25561E40006A4140 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC0B25561E40006A4140 /* ViewModel.swift */; };
-		96B3EC1725562674006A4140 /* TestSynth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC1625562674006A4140 /* TestSynth2.swift */; };
+		96B3EC1725562674006A4140 /* SimpleSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EC1625562674006A4140 /* SimpleSynth.swift */; };
+		96ED504F25566598008D7133 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED504E25566598008D7133 /* AudioModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +53,10 @@
 		96B3EBDA25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneGeneratorPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B3EBDE25561C7F006A4140 /* ToneGeneratorPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneGeneratorPlaygroundUITests.swift; sourceTree = "<group>"; };
 		96B3EBE025561C7F006A4140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96B3EBF125561CBC006A4140 /* TestOscillator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOscillator.swift; sourceTree = "<group>"; };
-		96B3EBF225561CBC006A4140 /* TestSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSynthesizer.swift; sourceTree = "<group>"; };
-		96B3EBF925561D8D006A4140 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		96B3EC0325561E29006A4140 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		96B3EC0B25561E40006A4140 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		96B3EC1625562674006A4140 /* TestSynth2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSynth2.swift; sourceTree = "<group>"; };
+		96B3EC1625562674006A4140 /* SimpleSynth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSynth.swift; sourceTree = "<group>"; };
+		96ED504E25566598008D7133 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +150,8 @@
 		96B3EBEF25561C9C006A4140 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				96B3EBF925561D8D006A4140 /* AudioModel.swift */,
-				96B3EBF125561CBC006A4140 /* TestOscillator.swift */,
-				96B3EBF225561CBC006A4140 /* TestSynthesizer.swift */,
-				96B3EC1625562674006A4140 /* TestSynth2.swift */,
+				96B3EC1625562674006A4140 /* SimpleSynth.swift */,
+				96ED504E25566598008D7133 /* AudioModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,15 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B3EC1725562674006A4140 /* TestSynth2.swift in Sources */,
+				96ED504F25566598008D7133 /* AudioModel.swift in Sources */,
+				96B3EC1725562674006A4140 /* SimpleSynth.swift in Sources */,
 				96B3EBBD25561C7C006A4140 /* AppDelegate.swift in Sources */,
 				96B3EC0C25561E40006A4140 /* ViewModel.swift in Sources */,
-				96B3EBF425561CBC006A4140 /* TestOscillator.swift in Sources */,
-				96B3EBF525561CBC006A4140 /* TestSynthesizer.swift in Sources */,
 				96B3EC0425561E29006A4140 /* TestView.swift in Sources */,
 				96B3EBBF25561C7C006A4140 /* SceneDelegate.swift in Sources */,
 				96B3EBC125561C7C006A4140 /* ContentView.swift in Sources */,
-				96B3EBFA25561D8D006A4140 /* AudioModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
