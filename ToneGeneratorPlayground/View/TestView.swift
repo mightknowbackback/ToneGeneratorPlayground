@@ -11,6 +11,14 @@ struct TestView: View {
     @EnvironmentObject var viewModel : ViewModel
     var body: some View {
         VStack {
+            Text("Waveform:")
+                .multilineTextAlignment(.center)
+                .padding()
+            Picker("", selection: self.viewModel.waveformBinding) {
+                ForEach(0..<self.viewModel.waveformStrings.count) {i in
+                    Text(self.viewModel.waveformStrings[i])
+                }
+            }
             Text(self.viewModel.frequencyLabelString)
                 .multilineTextAlignment(.center)
                 .padding()

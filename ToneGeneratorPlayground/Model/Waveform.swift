@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Waveform : String {
+enum Waveform : String, CaseIterable {
     
     typealias Signal = (Double) -> Float
     
@@ -15,7 +15,8 @@ enum Waveform : String {
     case triangle = "Triangle"
     case organ1 = "Organ 1"
     case organ2 = "Organ 2"
-    case sawtooth = "Saw"
+    case sawUp = "Saw Up"
+    case sawDown = "Saw Down"
     case square = "Square"
     
     var signal : Signal {
@@ -52,26 +53,38 @@ enum Waveform : String {
                 var val : Float = 0
                 var i = 1
                 while i < 5 {
-                    let f = Float(i)
-                    val += (sin(f*Float(percentage)))/f
+                    let d = Double(i)
+                    let position = percentage * d
+                    val += Waveform.sine.signal(position)/Float(d)
                     i += 1
                 }
                 return val/1.85
             }
         case .organ2:
-            return { (phase: Double) -> Float in
+            return { (percentage: Double) -> Float in
                 var val : Float = 0
                 var i = 1
                 while i < 12 {
-                    let f = Float(i)
-                    val += (sin(f*Float(phase)))/f
+                    let d = Double(i)
+                    let position = percentage * d
+                    val += Waveform.sine.signal(position)/Float(d)
                     i += 1
                 }
                 return val/1.85
             }
-        case .sawtooth:
+        case .sawUp:
             return { (percentage: Double) -> Float in
-                return 1.0 - 2.0 * (Float(percentage) * (1.0 / twoPi))
+                var val = Float(percentage)
+                val += 0.5
+                if val > 1 {
+                    val -= 1
+                }
+                let positiveOnly = 2*val
+                return positiveOnly - 1
+            }
+        case .sawDown:
+            return { (percentage: Double) -> Float in
+                return -(Waveform.sawUp.signal(percentage))
             }
         case .square:
             return { (percentage: Double) -> Float in

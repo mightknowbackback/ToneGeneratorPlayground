@@ -78,6 +78,7 @@ class SimpleSynth {
                 self.waveformLocation += self.waveformTimeDelta
                 var f = self.waveform.signal
                 buf[frame] = f(self.waveformLocation)
+                //print(buf[frame])
             }
         }
         return noErr
