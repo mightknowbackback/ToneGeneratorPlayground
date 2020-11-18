@@ -50,26 +50,7 @@ class SimpleSynth {
     private var waveformTimeDelta : Double { // Value of increment for moving through waveform one sample at a time.
         1/(self.sampleRate/Double(self.frequency)*2)
     }
-    private var valueForTriangleWave : Float { // Amplitude at current waveform location
-        // For ramp that starts at 0 and peaks at 2
-        func valueForPositiveWave(at percentage: Double) -> Float {
-            if percentage <= 0.5 {
-                return Float(percentage*4)
-            } else {
-                let modifier = percentage - 0.5
-                return Float(2 - modifier*4)
-            }
-        }
-        // Get time value to compensate for start offset
-        let timeOffset = 0.25
-        var timePercentageValue = self.waveformLocation + timeOffset
-        if timePercentageValue >= 1 {
-            timePercentageValue -= 1
-        }
-        // Get positive wave value and convert to -1 to 1 value range
-        return valueForPositiveWave(at: timePercentageValue) - 1
-        
-    }
+
     private lazy var sourceNode = AVAudioSourceNode {(_,_, frameCount, audioBufferList) -> OSStatus in
         var ablPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
         for frame in 0..<Int(frameCount) {
@@ -87,12 +68,6 @@ class SimpleSynth {
     init(waveform: Waveform) {
         
         self.audioEngine = AVAudioEngine()
-        do {
-            try self.audioEngine.enableManualRenderingMode(.realtime, format: self.audioEngine.manualRenderingFormat, maximumFrameCount: 128)
-        } catch {
-            print("asdf;lksajdf;lkasdf;lkajsd;flkasd;flkj\(error)")
-        }
-        
         self.waveform = waveform
         let mainMixer = self.audioEngine.mainMixerNode
         let outputNode = self.audioEngine.outputNode
