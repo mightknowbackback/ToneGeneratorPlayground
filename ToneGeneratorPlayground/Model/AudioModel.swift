@@ -8,5 +8,5 @@
 import Foundation
 
 struct AudioModel {
-    var synth = SimpleSynth()
+    var synth = SimpleSynth(waveform: .square)
 }

@@ -38,6 +38,7 @@ class SimpleSynth {
     // MARK: Signal Generation
     var frequency : Float = 440
     private let sampleRate : Double
+    var waveform : Waveform
     private var waveformLocation : Double = 0 { // Current location along waveform
         // Stays between 0 and 1
         didSet {
@@ -75,15 +76,14 @@ class SimpleSynth {
             for buffer in ablPointer {
                 let buf : UnsafeMutableBufferPointer<Float> = UnsafeMutableBufferPointer(buffer)
                 self.waveformLocation += self.waveformTimeDelta
-                var val = self.valueForTriangleWave
-                buf[frame] = val
+                var f = self.waveform.signal
+                buf[frame] = f(self.waveformLocation)
             }
         }
         return noErr
     }
-    
     // MARK: Initialization
-    init() {
+    init(waveform: Waveform) {
         
         self.audioEngine = AVAudioEngine()
         do {
@@ -92,7 +92,7 @@ class SimpleSynth {
             print("asdf;lksajdf;lkasdf;lkajsd;flkasd;flkj\(error)")
         }
         
-        
+        self.waveform = waveform
         let mainMixer = self.audioEngine.mainMixerNode
         let outputNode = self.audioEngine.outputNode
         let format = outputNode.inputFormat(forBus: 0)

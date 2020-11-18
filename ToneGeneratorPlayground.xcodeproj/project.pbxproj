@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967FE7F32565B68B00342F1E /* Waveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967FE7F22565B68B00342F1E /* Waveform.swift */; };
 		96B3EBBD25561C7C006A4140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBBC25561C7C006A4140 /* AppDelegate.swift */; };
 		96B3EBBF25561C7C006A4140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBBE25561C7C006A4140 /* SceneDelegate.swift */; };
 		96B3EBC125561C7C006A4140 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3EBC025561C7C006A4140 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		967FE7F22565B68B00342F1E /* Waveform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waveform.swift; sourceTree = "<group>"; };
 		96B3EBB925561C7C006A4140 /* ToneGeneratorPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToneGeneratorPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B3EBBC25561C7C006A4140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B3EBBE25561C7C006A4140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				96B3EC1625562674006A4140 /* SimpleSynth.swift */,
+				967FE7F22565B68B00342F1E /* Waveform.swift */,
 				96ED504E25566598008D7133 /* AudioModel.swift */,
 			);
 			path = Model;
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967FE7F32565B68B00342F1E /* Waveform.swift in Sources */,
 				96ED504F25566598008D7133 /* AudioModel.swift in Sources */,
 				96B3EC1725562674006A4140 /* SimpleSynth.swift in Sources */,
 				96B3EBBD25561C7C006A4140 /* AppDelegate.swift in Sources */,
