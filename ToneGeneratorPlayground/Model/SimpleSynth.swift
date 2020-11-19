@@ -11,8 +11,6 @@ import SwiftUI
 
 class SimpleSynth {
     
-    private var audioEngine : AVAudioEngine
-    
     // MARK: Interface
     public var volume : Float {
         set {
@@ -38,21 +36,19 @@ class SimpleSynth {
         }
     }
     
+    // MARK: Envelope
     // FOR ATTACK AND RELEASE (Eliminate pops & clicks)
     enum EnvelopeStage : CaseIterable {
         case attack, release
     }
+    
     var envelopeTimer : Timer = Timer()
     let attackTime : Double = 0.02
     let releaseTime : Double = 0.05
     let timerIncrement : Double = 0.002
     var stopDelayCount : Double = 0
     var stopDelayTime : Double = 0.05
-    private func startTimer(forEnvelopeStage stage: EnvelopeStage) {
-        let index = EnvelopeStage.allCases.firstIndex(of: stage)!
-        self.envelopeTimer = Timer.scheduledTimer(timeInterval: self.timerIncrement, target: self, selector: #selector(self.processEnvelopeTimer), userInfo: index, repeats: true)
-        
-    }
+    
     private func resetEnvelope() {
         self.stopDelayCount = 0
     }
@@ -64,22 +60,29 @@ class SimpleSynth {
         self.resetEnvelope()
         self.startTimer(forEnvelopeStage: .attack)
     }
+    private func startTimer(forEnvelopeStage stage: EnvelopeStage) {
+        let index = EnvelopeStage.allCases.firstIndex(of: stage)!
+        self.envelopeTimer = Timer.scheduledTimer(timeInterval: self.timerIncrement, target: self, selector: #selector(self.processEnvelopeTimer), userInfo: index, repeats: true)
+    }
     @objc private func processEnvelopeTimer(_ timer: Timer) {
+        // Get volume change increment for envelope stage
         let stage = EnvelopeStage.allCases[timer.userInfo as! Int]
-        let length : Double = {
+        var length : Double {
             switch stage {
             case .attack:
                 return self.attackTime
             case .release:
                 return self.releaseTime
             }
-        }()
+        }
         let volumeIncrement = Float(1*self.timerIncrement/length)
+        // Apply volume change for appropriate stage. Invalidate timer when at stage level.
         switch stage {
         case .attack:
             if self.volume > 0.095 {
                 if self.volume != 1 {
                     self.volume = 1
+                } else {
                     self.envelopeTimer.invalidate()
                 }
             } else {
@@ -103,6 +106,7 @@ class SimpleSynth {
     }
     
     // MARK: Signal Generation
+    private var audioEngine : AVAudioEngine
     var frequency : Float = 440
     private let sampleRate : Double
     var waveform : Waveform
@@ -126,11 +130,11 @@ class SimpleSynth {
                 self.waveformLocation += self.waveformTimeDelta
                 var f = self.waveform.signal
                 buf[frame] = f(self.waveformLocation)
-                //print(buf[frame])
             }
         }
         return noErr
     }
+    
     // MARK: Initialization
     init(waveform: Waveform) {
         
