@@ -7,8 +7,9 @@
 
 import Foundation
 
-enum Waveform : String, CaseIterable {
+enum Waveform : String, CaseIterable { 
     
+    // Used by SimpleSynth to determine shape of waveform
     typealias Signal = (Double) -> Float
     
     case sine = "Sine"
@@ -52,24 +53,26 @@ enum Waveform : String, CaseIterable {
             return { (percentage: Double) -> Float in
                 var val : Float = 0
                 var i = 1
-                while i < 5 {
+                while i < 5 {// additive synthesis. add sine wave for each overtone up to five
                     let d = Double(i)
                     let position = percentage * d
                     val += Waveform.sine.signal(position)/Float(d)
                     i += 1
                 }
+                // return summed waveform with compensation to eliminate clipping
                 return val/1.85
             }
         case .organ2:
             return { (percentage: Double) -> Float in
                 var val : Float = 0
                 var i = 1
-                while i < 12 {
+                while i < 12 {// additive synthesis. add sine wave for each overtone up to twelve
                     let d = Double(i)
                     let position = percentage * d
                     val += Waveform.sine.signal(position)/Float(d)
                     i += 1
                 }
+                // return summed waveform with compensation to eliminate clipping
                 return val/1.85
             }
         case .sawUp:
